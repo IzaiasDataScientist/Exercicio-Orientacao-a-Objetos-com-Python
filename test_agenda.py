@@ -1,6 +1,6 @@
 import unittest
 
-from Agenda import Agenda
+from agenda import Agenda
 
 
 class MyTestCase(unittest.TestCase):
