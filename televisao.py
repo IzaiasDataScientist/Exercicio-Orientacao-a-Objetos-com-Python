@@ -1,8 +1,8 @@
 class Televisao(object):
 
     def __init__(self):
-        self.__volume = 0
-        self.__canal = 0
+        self.__volume: int = 0
+        self.__canal: int = 0
 
     @property
     def volume(self):
@@ -37,7 +37,7 @@ class ControleRemoto(Televisao):
         if self._Televisao__canal > 0:
             self._Televisao__canal -= 1
 
-    def trocar_canal(self, canal):
+    def trocar_canal(self, canal: int):
         if canal <= 10:
             self._Televisao__canal = canal
 
